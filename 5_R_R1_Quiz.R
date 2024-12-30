@@ -1,0 +1,7 @@
+list()
+ls()
+remove('Xy')
+load('5.R.RData')
+require(MASS)
+lin_reg = lm(Xy$y ~ Xy$X1 + Xy$X2,data=Xy)
+summary(lin_reg)
